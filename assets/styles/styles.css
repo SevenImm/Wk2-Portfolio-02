@@ -87,54 +87,38 @@ nav a:active {
     background-color: var(--Headerbkcolor);
     color: var(--HeaderTxtClr);
 }
+ #about-me {
+    display: flex;
+    width: 95%;
+    border-style: solid;
+ }
 
-#gridlayout {
-    display: grid;
-    grid-template:
-        'aboutme main main '
-        'work main2 main2 '
-        'menu3 main3 main3 '
-        'footer footer footer';
+ .titleasdie{
+    width: 20%;
+    border-right: #13293d solid;
+    position: relative;
+    text-align: end;
+ }
+ .aboutmep{
+    width: 80%;
+    margin: 0 1% 1% 1%;
+    display: flex;
+ }
+ .Myparg {
+    margin: 1%;
+    padding: 1%;
+ }
+.aboutmep pre {
+    margin: 0;
+    display: flex;
 }
-
-#about-me pre{
-    grid-area: 'aboutme';
-}
-#NextTo {
-    border-right: #13293d solid 4px;
-}
-.aboutmep{
-    grid-area: 'main';
-
-}
-
-#Works {
-    grid-area: 'work';
-}
-
-
-/*
-#wrapper {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#NextTo {
-    text-align: right;
-    border-right: #13293d solid 4px;
-    margin: 0 1rem 0 10rem;
-    padding: 0 1rem 0 0;
-    height: 140px;
-
-}
-
-section aside {
-    display: block;
-    float: left;
-}
-
-
-.aboutmep {
-    margin-left: 2rem;
-    text-align: left;
-} */
+#Work-sec {
+    display: flex;
+    width: 95%;
+    border-style: solid;
+ }
+ #Contact-me {
+    display: flex;
+    width: 95%;
+    border-style: solid;
+ }
