@@ -9,13 +9,13 @@
     position: relative;
 }
 
-body {}
 
 header {
     display: flex;
     justify-content: space-between;
     align-content: center;
     padding: 2%;
+    max-height: 200px;
     /*Color variants*/
     background-color: var(--Headerbkcolor);
     color: var(--HeaderTxtClr);
@@ -34,18 +34,24 @@ h2 {
     font-size: 175%;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
+div nav ul {
+    position: relative;
+    right: 16px;
+    top: 16px;
     min-width: 400px;
     font-size: larger;
+    overflow-x: hidden;
+}
+
+div nav ul li {
+    display: inline;
 }
 
 nav a {
     background-color: unset;
     color: var(--AnchorClr);
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
     transition: all 500ms;
 }
 
@@ -75,51 +81,60 @@ nav a:active {
     right: 16px;
     bottom: 8px;
     padding: 1%;
+    /*Added style to the welcome section so it looks more similart to challenge*/
     border-style: solid;
     border-color: var(--AnchorClr);
     background-color: var(--Headerbkcolor);
     color: var(--HeaderTxtClr);
 }
 
-#wrapper {
-    text-align: center;
+#gridlayout {
+    display: grid;
+    grid-template:
+        'aboutme main main '
+        'work main2 main2 '
+        'menu3 main3 main3 '
+        'footer footer footer';
 }
 
-#NextTo{
+#about-me pre{
+    grid-area: 'aboutme';
+}
+#NextTo {
+    border-right: #13293d solid 4px;
+}
+.aboutmep{
+    grid-area: 'main';
+
+}
+
+#Works {
+    grid-area: 'work';
+}
+
+
+/*
+#wrapper {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#NextTo {
     text-align: right;
+    border-right: #13293d solid 4px;
+    margin: 0 1rem 0 10rem;
+    padding: 0 1rem 0 0;
+    height: 140px;
+
 }
 
 section aside {
     display: block;
     float: left;
-    margin: 0 1rem 0 10rem;
-    padding: 0 1rem 0 0;
-    height: 140px;
-    border-right: #13293d solid 4px;}
+}
+
 
 .aboutmep {
     margin-left: 2rem;
     text-align: left;
-}
-
-/*
-.wrapper{
-    text-align: center;
-}
-section aside {
-    display: block;
-    float: left;
-    margin: 0 0 0 10rem;
-    padding: 0 0 0 0;
-    height: 170px;
-    border-right: #13293d solid 4px;
-}
-section aside h1 {
-    color: gray;
-
-}
-.aboutmep {
-    display: block;
-    text-align: left;
-    margin: 2rem 0 2rem 4rem;
 } */
