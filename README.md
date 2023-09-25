@@ -7,4 +7,4 @@ Added Main structure of the website. + CSS
 
 # Screenshots
 ## First iteration: Feature/code
-![Alt text](./assets/Images/Placeholder.jpg)
+![Alt text](./assets/Images/Iteration/image.png)

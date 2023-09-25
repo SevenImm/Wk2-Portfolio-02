@@ -74,9 +74,11 @@ nav a:active {
     position: absolute;
     right: 16px;
     bottom: 8px;
+    padding: 1%;
     border-style: solid;
     border-color: var(--AnchorClr);
-    background-color: aqua;
+    background-color: var(--Headerbkcolor);
+    color: var(--HeaderTxtClr);
 }
 
 #wrapper {
