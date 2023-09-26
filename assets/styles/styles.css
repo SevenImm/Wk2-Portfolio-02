@@ -122,3 +122,18 @@ nav a:active {
     width: 95%;
     border-style: solid;
  }
+ .large-card {
+    flex-direction: column;
+    justify-content: center;
+    border: #13293d solid;
+ }
+ .small-card-container {
+    flex-direction: row;
+ }
+ .large-card a img {
+    height: 250px;
+    width: 850px; 
+    object-fit: cover;
+    object-position: 0 20%;
+ }
+ 
