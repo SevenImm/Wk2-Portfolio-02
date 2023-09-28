@@ -30,6 +30,9 @@ h2 {
 h3 {
     font-size: 150%;
 }
+h4 {
+    font-size: 140%;
+}
 
 header {
     display: flex;
@@ -225,6 +228,10 @@ nav a:active {
 .Smallimg a:hover {
     background-color: transparent;
     transition: 399ms;
+}
+#footer{
+    text-align: center;
+    margin: 1%;
 }
 
 
