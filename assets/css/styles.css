@@ -191,7 +191,7 @@ nav a:active {
     display: flex;
     justify-content: center;
     /* Add Img */
-    background-image: url(/assets/Images/digital-marketing-meeting.jpg);
+    background-image: url(/assets/Images/ArtImg.jpg);
     background-size: cover;
     min-height: 300px;
     min-width: 400px;
@@ -250,7 +250,7 @@ nav a:active {
     width: 55%;
     min-height: 300px;
     min-width: 400px;
-    background-image: url(/assets/Images/digital-marketing-meeting.jpg);
+    background-image: url(/assets/Images/ArtImg.jpg);
     background-position: 0% 0%;
     background-size: cover;
     justify-content: space-between;
