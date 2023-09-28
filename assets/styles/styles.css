@@ -9,29 +9,6 @@
     position: relative;
 }
 
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 2%;
-    max-height: 200px;
-    /*Color variants*/
-    background-color: var(--Headerbkcolor);
-    color: var(--HeaderTxtClr);
-}
-
-header img {
-    max-height: 120px;
-    max-width: 120px;
-    display: inline;
-}
-
-header h1 {
-    position: absolute;
-    left: 150px;
-}
-
 h1 {
     font-size: 200%;
 }
@@ -44,12 +21,34 @@ h1::selection {
 h2 {
     font-size: 175%;
 }
+h3 {
+    font-size: 150%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: end;
+    /* max-height: 200px; */
+    /*Color variants*/
+    background-color: var(--Headerbkcolor);
+    color: var(--HeaderTxtClr);
+}
+
+header img {
+    /* Setting the img small enough to not overflow to the whole page */
+    max-height: 4%;
+    max-width: 4%;
+    /* Prevent the img from cutting the Name/title */
+    display: inline;
+}
+
+
 
 div nav ul {
     position: relative;
-    right: 16px;
-    top: 16px;
-    min-width: 400px;
     font-size: larger;
     overflow-x: hidden;
 }
@@ -102,7 +101,8 @@ nav a:active {
 #about-me {
     display: flex;
     width: 100%;
-    border-style: solid;
+    margin-bottom: 2%;
+    /* border-style: solid; */
 }
 
 .titleasdie {
@@ -128,14 +128,15 @@ nav a:active {
 
 #Work-sec {
     display: flex;
-    width: 100%;
-    border-style: solid;
+    /* width: 100%; */
+    margin-bottom: 2%;
+    /* border-style: solid; */
 }
 
 #Contact-me {
     display: flex;
     width: 100%;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .large-card {
@@ -143,12 +144,9 @@ nav a:active {
     border: #13293d solid;
 }
 
-/* .small-card-container {
-    flex-direction: row;
- } */
 .large-card a img {
-    height: 250px;
-    width: 850px;
+    height: 80%;
+    width: 70%;
     object-fit: cover;
     object-position: 0 20%;
 }
@@ -156,11 +154,8 @@ nav a:active {
 .Subtitleh3 {
     display: table;
     position: relative;
-    justify-self: left;
-    right: 0px;
     bottom: 40px;
     border: #ff0000 solid;
-    text-decoration: none;
     background-color: #13293d;
     color: var(--HeaderTxtClr);
 
@@ -173,10 +168,8 @@ nav a:active {
 
 .small-card-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
-    gap: 10px;
 }
 
 .Smallimg {
@@ -184,13 +177,3 @@ nav a:active {
     flex-wrap: wrap;
     width: 50%;
 }
-.Smallimg {
-    
-}
-
-.LinksContactme div nav ul li{
-    display: inline;
-    justify-content: space-between;
-}
-
-/* Latest iteration */
