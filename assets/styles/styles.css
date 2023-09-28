@@ -20,11 +20,13 @@ header {
     background-color: var(--Headerbkcolor);
     color: var(--HeaderTxtClr);
 }
+
 header img {
     max-height: 120px;
     max-width: 120px;
     display: inline;
 }
+
 header h1 {
     position: absolute;
     left: 150px;
@@ -96,58 +98,64 @@ nav a:active {
     background-color: var(--Headerbkcolor);
     color: var(--HeaderTxtClr);
 }
- #about-me {
-    display: flex;
-    width: 95%;
-    border-style: solid;
- }
 
- .titleasdie{
+#about-me {
+    display: flex;
+    width: 100%;
+    border-style: solid;
+}
+
+.titleasdie {
     width: 20%;
     border-right: #13293d solid;
     position: relative;
     text-align: end;
- }
- .aboutmep{
+}
+
+.aboutmep {
     width: 80%;
-    margin: 0 1% 1% 1%;
     display: flex;
     flex-direction: column;
- }
- .Myparg {
-    margin: 1%;
-    padding: 1%;
- }
-.aboutmep pre {
-    margin: 0;
-    display: flex;
 }
+
+.Myparg {}
+
+.aboutmep pre {
+    margin: -4px 0 10px -50px;
+    display: flex;
+    position: relative;
+}
+
 #Work-sec {
     display: flex;
-    width: 95%;
+    width: 100%;
     border-style: solid;
- }
- #Contact-me {
+}
+
+#Contact-me {
     display: flex;
-    width: 95%;
+    width: 100%;
     border-style: solid;
- }
- .large-card {
+}
+
+.large-card {
     align-self: center;
     border: #13293d solid;
- }
- .small-card-container {
+}
+
+/* .small-card-container {
     flex-direction: row;
- }
- .large-card a img {
+ } */
+.large-card a img {
     height: 250px;
-    width: 850px; 
+    width: 850px;
     object-fit: cover;
     object-position: 0 20%;
- }
- .Subtitleh3 {
-    display: inline;
-    position:relative;
+}
+
+.Subtitleh3 {
+    display: table;
+    position: relative;
     justify-self: left;
     right: 0px;
     bottom: 40px;
@@ -156,22 +164,33 @@ nav a:active {
     background-color: #13293d;
     color: var(--HeaderTxtClr);
 
- }
- .large-card a img .Subtitleh3 {
-    display: inline;
-    
- }
+}
 
- .small-card-container{
+.large-card a img .Subtitleh3 {
+    display: inline;
+
+}
+
+.small-card-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
     gap: 10px;
- }
- .Smallimg {
+}
+
+.Smallimg {
     display: flex;
     flex-wrap: wrap;
-    height: 200px;
-    width: 250px;
- }
- /* Latest iteration */
+    width: 50%;
+}
+.Smallimg {
+    
+}
+
+.LinksContactme div nav ul li{
+    display: inline;
+    justify-content: space-between;
+}
+
+/* Latest iteration */
