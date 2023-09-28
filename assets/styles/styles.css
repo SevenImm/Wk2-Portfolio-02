@@ -3,6 +3,7 @@
     --HeaderTxtClr: white;
     --AnchorClr: cyan;
     --Activetxt: red;
+    --Overlayimg: rgba(0, 225,225,0.3)
 }
 
 .container {
@@ -11,6 +12,9 @@
 
 h1 {
     font-size: 200%;
+}
+h1::before{
+    background-image: url(/assets/Images/Placeholder.jpg);
 }
 
 h1::selection {
@@ -42,7 +46,7 @@ header img {
     max-height: 4%;
     max-width: 4%;
     /* Prevent the img from cutting the Name/title */
-    display: inline;
+    display: flex;
 }
 
 
@@ -107,7 +111,7 @@ nav a:active {
 
 .titleasdie {
     width: 20%;
-    border-right: #13293d solid;
+    border-right: var(--Headerbkcolor) solid;
     position: relative;
     text-align: end;
 }
@@ -143,18 +147,36 @@ nav a:active {
     /* Display flex to center img */
     display: flex;
     justify-content: center;
-    /* border: #13293d solid; */
+    /* Add Img */
+    background-image: url(/assets/Images/digital-marketing-meeting.jpg);
+    background-size: cover;
+    min-height: 300px;
+    min-width: 400px;
+    /* Add marging to prevent overflow */
+    margin: 0 10% 0;
+    /* Proper x & y img fitting */
+    background-position: 10% 35%;
+    /* Add a border */
+    border: var(--AnchorClr) solid;
 }
 
+
+/* Target the large-card size and make "overlay" */
 .large-card a{
+    /* make child position relative to the parent */
     position: relative;
+    /* Cover the whole space */
+    width: 100%;
+    /* Overlay effect */
+    background-color: rgba(0, 225, 225, 0.3);
+    transition: 300ms;
+
 }
-.large-card a img {
-    height: 60%;
-    width: 90%;
-    object-fit: cover;
-    object-position: 0 20%;
-}
+/* disapear overlay */
+.large-card a:hover {
+    background-color: transparent;
+    transition: 399ms;
+    }
 
 .Subtitleh3 {
     display: table;
@@ -173,21 +195,28 @@ nav a:active {
 
 .small-card-container {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    /* background-image: url(/assets/Images/digital-marketing-meeting.jpg); */
+    /* min-height: 200px */
+
+
 }
 
 .Smallimg {
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
+    min-height: 150px;
+    min-width: 400px;
+    background-image: url(/assets/Images/digital-marketing-meeting.jpg);
+    background-position: 0% 0%;
+    background-size: cover;
+    justify-content: space-between;
+    /* background-color: red; */
 }
-/* .Smallimg:hover {
-    background-color: rgba(0,0,0.3)
-} */
-/* .overlayimg {
-    background-color:rgba(0, 0, 0, 0.3);
-} */
+/* fit heading to bottom left corner */
+.Smallimg h3{
+    position: relative;
+}
+
 @media screen and (max-width: 768px){
     .small-card-container {
         flex-direction: column;
