@@ -3,7 +3,7 @@
     --HeaderTxtClr: white;
     --AnchorClr: cyan;
     --Activetxt: red;
-    --Overlayimg: rgba(0, 225,225,0.3)
+    --Overlayimg: rgba(0, 225, 225, 0.3)
 }
 
 .container {
@@ -13,7 +13,8 @@
 h1 {
     font-size: 200%;
 }
-h1::before{
+
+h1::before {
     background-image: url(/assets/Images/Placeholder.jpg);
 }
 
@@ -25,6 +26,7 @@ h1::selection {
 h2 {
     font-size: 175%;
 }
+
 h3 {
     font-size: 150%;
 }
@@ -132,14 +134,12 @@ nav a:active {
 
 #Work-sec {
     display: flex;
-    /* width: 100%; */
     margin-bottom: 2%;
     /* border-style: solid; */
 }
 
 #Contact-me {
     display: flex;
-    width: 100%;
     /* border-style: solid; */
 }
 
@@ -162,7 +162,7 @@ nav a:active {
 
 
 /* Target the large-card size and make "overlay" */
-.large-card a{
+.large-card a {
     /* make child position relative to the parent */
     position: relative;
     /* Cover the whole space */
@@ -172,39 +172,39 @@ nav a:active {
     transition: 300ms;
 
 }
+
 /* disapear overlay */
 .large-card a:hover {
     background-color: transparent;
     transition: 399ms;
-    }
+}
 
 .Subtitleh3 {
     display: table;
     position: relative;
-    bottom: 40px;
     border: #ff0000 solid;
     background-color: #13293d;
     color: var(--HeaderTxtClr);
 
 }
-
-.large-card a img .Subtitleh3 {
-    display: inline;
-
+/* Use a flexbox to make a 2 row and separate the rest on another row */
+.small-card-container{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.small-card-container {
+.small-card-container div{ 
     display: flex;
-    justify-content: space-evenly;
-    /* width: 100%; */
-    /* background-image: url(/assets/Images/digital-marketing-meeting.jpg); */
-    /* min-height: 200px */
-
-
+    justify-content: center;
+    width: 100%;
 }
 
 .Smallimg {
-    min-height: 150px;
+    /* Add same margin to top img */
+    margin: 0 10% 0;
+    width: 55%;
+    min-height: 300px;
     min-width: 400px;
     background-image: url(/assets/Images/digital-marketing-meeting.jpg);
     background-position: 0% 0%;
@@ -212,13 +212,34 @@ nav a:active {
     justify-content: space-between;
     /* background-color: red; */
 }
-/* fit heading to bottom left corner */
-.Smallimg h3{
+/* Target the small-card size and make "overlay" */
+.Smallimg a {
+    /* make child position relative to the parent */
     position: relative;
+    /* Cover the whole space */
+    width: 100%;
+    /* Overlay effect */
+    background-color: rgba(0, 225, 225, 0.3);
+    transition: 300ms;
+}
+/* disapear overlay */
+.Smallimg a:hover {
+    background-color: transparent;
+    transition: 399ms;
 }
 
-@media screen and (max-width: 768px){
+
+/* .LinksContactme nav ul li a{
+    display: flex;
+    justify-content: right; */
+}
+
+@media screen and (max-width: 768px) {
+    /* .Myparg{
+        flex-wrap: wrap;
+    } */
     .small-card-container {
+        flex-wrap: wrap;
         flex-direction: column;
     }
 }
