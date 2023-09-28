@@ -47,8 +47,7 @@ header img {
     /* Setting the img small enough to not overflow to the whole page */
     max-height: 4%;
     max-width: 4%;
-    /* Prevent the img from cutting the Name/title */
-    display: flex;
+
 }
 
 
@@ -120,8 +119,7 @@ nav a:active {
 
 .aboutmep {
     width: 80%;
-    display: flex;
-    flex-direction: column;
+    margin: 0 4% 1% 2%;
 }
 
 .Myparg {}
@@ -182,7 +180,8 @@ nav a:active {
 .Subtitleh3 {
     display: table;
     position: relative;
-    border: #ff0000 solid;
+    bottom: -80%;
+    border: var(--AnchorClr) solid;
     background-color: #13293d;
     color: var(--HeaderTxtClr);
 
@@ -229,17 +228,9 @@ nav a:active {
 }
 
 
-/* .LinksContactme nav ul li a{
-    display: flex;
-    justify-content: right; */
-}
 
 @media screen and (max-width: 768px) {
-    /* .Myparg{
-        flex-wrap: wrap;
-    } */
     .small-card-container {
         flex-wrap: wrap;
-        flex-direction: column;
     }
 }
