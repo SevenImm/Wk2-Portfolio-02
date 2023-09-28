@@ -3,7 +3,7 @@
     --HeaderTxtClr: white;
     --AnchorClr: cyan;
     --Activetxt: red;
-    --Overlayimg: rgba(0, 225, 225, 0.3)
+    --NavHoverClr: Black;
 }
 
 .container {
@@ -74,13 +74,13 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--HeaderTxtClr);
+    color: var(--Activetxt);
     font-size: x-large;
     transition: 500ms;
 }
 
 nav a:active {
-    color: var(--Activetxt);
+    color: var(--AnchorClr);
     transition: all 200ms;
 }
 
