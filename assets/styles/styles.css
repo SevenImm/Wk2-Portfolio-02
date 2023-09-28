@@ -140,13 +140,18 @@ nav a:active {
 }
 
 .large-card {
-    align-self: center;
-    border: #13293d solid;
+    /* Display flex to center img */
+    display: flex;
+    justify-content: center;
+    /* border: #13293d solid; */
 }
 
+.large-card a{
+    position: relative;
+}
 .large-card a img {
-    height: 80%;
-    width: 70%;
+    height: 60%;
+    width: 90%;
     object-fit: cover;
     object-position: 0 20%;
 }
@@ -176,4 +181,15 @@ nav a:active {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+}
+/* .Smallimg:hover {
+    background-color: rgba(0,0,0.3)
+} */
+/* .overlayimg {
+    background-color:rgba(0, 0, 0, 0.3);
+} */
+@media screen and (max-width: 768px){
+    .small-card-container {
+        flex-direction: column;
+    }
 }
