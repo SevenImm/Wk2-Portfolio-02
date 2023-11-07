@@ -191,7 +191,7 @@ nav a:active {
     display: flex;
     justify-content: center;
     /* Add Img */
-    background-image: url(/assets/Images/ArtImg.jpg);
+    background-image: url(../Images/Project01.png);
     background-size: cover;
     min-height: 300px;
     min-width: 400px;

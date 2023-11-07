@@ -26,3 +26,4 @@ Overall, This was a real test to my fresh CSS skills. I had fun debugging and re
 ![Alt text](/assets/Images/Iteration/Styling-css03.png)
 ## Third Iterationl: Debugged.
 ![Alt text](./assets/Images/Iteration/Web%20capture_28-9-2023_143847_127.0.0.1.jpeg)
+![Alt text](image.png)
